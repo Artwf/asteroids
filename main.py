@@ -51,7 +51,7 @@ def main():
                 sys.exit()
             for i in shots_group:
                 if item.collision_check(i):
-                    item.kill()
+                    item.split(asteroids)
                     i.kill()
         screen.fill("black")
         for obj in drawable:
